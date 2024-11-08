@@ -1,0 +1,48 @@
+System.out.println(Math.exp(2));
+Gibt die eulersche Zahl (~ 2.718) hoch 2 zurück.
+
+
+System.out.rpintln(Math.pow(2, 2));
+Gibt die erste Zahl hoch die zweite zurück.
+
+
+String s="Hallo"; int i=s.indexOf("o"); System.out.println(i);
+Gibt den Index vom Buchstaben "o" aus "Hallo" zurück als int.
+
+
+String t="Hallo"; if(t.startsWith("www")) System.out.println("web");
+Testet ob der String mit dem gegebenen Prefix anfängt.
+
+
+System.out.println(new Formatter().format("KW%d / %4d", 2, 2012));
+"KW%d / %4d" ist der Formatstring.
+%d ist ein Platzhalter für eine Dezimalzahl (ganze Zahl).
+Das erste %d wird durch den ersten zusätzlichen Parameter (2) ersetzt.
+%4d bedeutet, dass der zweite Parameter (2012) als Dezimalzahl in einem Feld der Breite 4 ausgegeben wird. Wenn die Zahl weniger als 4 Stellen hat, wird der Platz vor der Zahl mit Leerzeichen aufgefüllt.
+Die Zahlen 2 und 2012 sind die Argumente, die in den Formatstring eingesetzt werden.
+
+
+for(String u: "Hallo liebe SWEP-Studenten".split(" ")) System.out.println(u);
+Der String "Hallo liebe SWEP-Studenten" wird bei jedem Leerzeichen geteilt, was zu einem Array führt, das die Strings "Hallo", "liebe", "SWEP-Studenten" enthält.
+Die For-Each-Schleife iteriert durch dieses Array. In jedem Schritt der Schleife wird der Variable u ein Element des Arrays zugewiesen.
+System.out.println(u); gibt das aktuelle Element u des Arrays aus.
+
+
+Scanner v=new Scanner("1 A 9"); int j=0; while (v.hasNext()) j+=v.nextInt(16);
+Scanner Objekt v mit übergebenem String "1 A 9". 
+While schleife läuft solange die Methode hasNext() weitere Tokens findet.
+Der String wird mit nextInt(16) als Hexadezimalzahl interpretiert und jede Ziffer wird mit j addiert.
+Am ende kriegen wir 20 raus da im Hexadezimalsystem 1 = 1, A = 10, 9 = 9.
+
+
+System.out.println((int)Math.pow(8, 4) + 615);
+
+
+
+
+
+
+
+
+
+
